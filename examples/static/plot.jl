@@ -4,8 +4,10 @@ using Argon
 particle1 = Particle(4., 5., 1., 0.)
 particle2 = Particle(6., 5., 1., 0.)
 L = 10. # length of the box [σ]
+dt = 0.1 # time step [s]
+tf = 1 # simulation time [s]
 
-s = Simulation(L, [particle1, particle2])
+s = Simulation(L, dt, tf, [particle1, particle2])
 p1 = quiver(
     [p.x for p in s.particles],[p.y for p in s.particles],
     quiver = ([p.vx for p in s.particles], [p.vy for p in s.particles])
