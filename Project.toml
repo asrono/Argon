@@ -1,0 +1,4 @@
+name = "Argon"
+uuid = "82476e72-a3ec-4609-9ef0-5380b75d8831"
+authors = ["nibuijss <niels.buijssen-nbuj@asml.com>"]
+version = "0.1.0"
