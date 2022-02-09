@@ -6,3 +6,7 @@ mutable struct Particle
     vx::Float64
     vy::Float64
 end
+
+function Particle()
+    return Particle(0,0,0,0)
+end
